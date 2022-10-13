@@ -15,7 +15,7 @@ struct CardView: View {
                 .aspectRatio(contentMode:.fit)
                 .frame(height: 128.0)
                 .frame(maxWidth: .infinity)
-            Text("Resep Omelette Terbaik")
+            Text("Resep Omelette Terbaik hehe")
                 .font(.title)
                 .fontWeight(.bold)
             Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
