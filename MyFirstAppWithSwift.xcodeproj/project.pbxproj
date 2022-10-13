@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D3F387E28F7F81900496228 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3F387D28F7F81900496228 /* DetailView.swift */; };
+		1D3F388028F7FC3D00496228 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3F387F28F7FC3D00496228 /* CardView.swift */; };
+		1D3F388228F7FCC500496228 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D3F388128F7FCC500496228 /* HomeView.swift */; };
 		1DBE686328F71DE3008394B7 /* MyFirstAppWithSwiftApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE686228F71DE3008394B7 /* MyFirstAppWithSwiftApp.swift */; };
 		1DBE686528F71DE3008394B7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DBE686428F71DE3008394B7 /* ContentView.swift */; };
 		1DBE686728F71DE5008394B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DBE686628F71DE5008394B7 /* Assets.xcassets */; };
@@ -14,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D3F387D28F7F81900496228 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		1D3F387F28F7FC3D00496228 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		1D3F388128F7FCC500496228 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		1DBE685F28F71DE3008394B7 /* MyFirstAppWithSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFirstAppWithSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DBE686228F71DE3008394B7 /* MyFirstAppWithSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstAppWithSwiftApp.swift; sourceTree = "<group>"; };
 		1DBE686428F71DE3008394B7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +59,9 @@
 			children = (
 				1DBE686228F71DE3008394B7 /* MyFirstAppWithSwiftApp.swift */,
 				1DBE686428F71DE3008394B7 /* ContentView.swift */,
+				1D3F388128F7FCC500496228 /* HomeView.swift */,
+				1D3F387F28F7FC3D00496228 /* CardView.swift */,
+				1D3F387D28F7F81900496228 /* DetailView.swift */,
 				1DBE686628F71DE5008394B7 /* Assets.xcassets */,
 				1DBE686828F71DE5008394B7 /* Preview Content */,
 			);
@@ -138,6 +147,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1DBE686528F71DE3008394B7 /* ContentView.swift in Sources */,
+				1D3F387E28F7F81900496228 /* DetailView.swift in Sources */,
+				1D3F388028F7FC3D00496228 /* CardView.swift in Sources */,
+				1D3F388228F7FCC500496228 /* HomeView.swift in Sources */,
 				1DBE686328F71DE3008394B7 /* MyFirstAppWithSwiftApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
