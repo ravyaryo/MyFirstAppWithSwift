@@ -8,17 +8,18 @@
 import SwiftUI
 
 struct CardView: View {
+    var item: Item = items[0]
     var body: some View {
         VStack(alignment: .leading, spacing: 8.0) {
-            Image("test omelette")
+            Image(item.image)
                 .resizable()
                 .aspectRatio(contentMode:.fit)
                 .frame(height: 128.0)
                 .frame(maxWidth: .infinity)
-            Text("Resep Omelette Terbaik")
+            Text(item.title)
                 .font(.title)
                 .fontWeight(.bold)
-            Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
+            Text(item.text)
                 .lineLimit(2)
                 .opacity(0.7)
             Text("20 Section - 3 Hours")
