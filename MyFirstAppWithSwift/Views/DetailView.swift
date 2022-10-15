@@ -8,19 +8,19 @@
 import SwiftUI
 
 struct DetailView: View {
-    @Binding var detailmakanan: Item
+    var card: Card
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 8.0) {
-                Image(detailmakanan.image)
+                Image(card.image)
                     .resizable()
                     .aspectRatio(contentMode:.fit)
                     .frame(height: 128.0)
                     .frame(maxWidth: .infinity)
-                Text(detailmakanan.title)
+                Text(card.title)
                     .font(.title)
                     .fontWeight(.bold)
-                Text(detailmakanan.text)
+                Text(card.text)
                     .lineLimit(2)
                     .opacity(0.7)
                 Text("20 Section - 3 Hours")
@@ -45,6 +45,6 @@ struct DetailView: View {
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView(detailmakanan: .constant(.example))
+        DetailView(card: CardList.items.first!)
     }
 }

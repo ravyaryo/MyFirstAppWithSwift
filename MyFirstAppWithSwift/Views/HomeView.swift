@@ -20,15 +20,7 @@ struct HomeView: View {
                             .fontWeight(.bold)
                             .padding([.top, .leading])
                         ScrollView(.horizontal,showsIndicators: false) {
-                            HStack(spacing: 16){
-                                ForEach(items) { item in
-                                    NavigationLink(destination:
-                                                    DetailView(detailmakanan: .constant(.example))) {
-                                        CardView(item: item)
-                                    }
-                                }
-                            }
-                            .padding(.leading)
+                           CardView()
                         }
                         Text("Recomendation")
                             .font(.title)
