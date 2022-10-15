@@ -8,18 +8,19 @@
 import SwiftUI
 
 struct DetailView: View {
+    @Binding var detailmakanan: Item
     var body: some View {
         ScrollView {
             VStack(alignment: .leading, spacing: 8.0) {
-                Image("test omelette")
+                Image(detailmakanan.image)
                     .resizable()
                     .aspectRatio(contentMode:.fit)
                     .frame(height: 128.0)
                     .frame(maxWidth: .infinity)
-                Text("Resep Omelette Terbaik")
+                Text(detailmakanan.title)
                     .font(.title)
                     .fontWeight(.bold)
-                Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.")
+                Text(detailmakanan.text)
                     .lineLimit(2)
                     .opacity(0.7)
                 Text("20 Section - 3 Hours")
@@ -29,7 +30,7 @@ struct DetailView: View {
             .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
             .background(Color(#colorLiteral(red: 0.13725490868091583, green: 0.7058823704719543, blue: 0.3450980484485626, alpha: 1)))
             VStack(alignment: .leading, spacing: 16.0) {
-                Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ")
+                Text("Today we gonna learn about this recipe.")
                     .font(.headline)
                 Text("This Course ")
                     .font(.title)
@@ -44,6 +45,6 @@ struct DetailView: View {
 
 struct DetailView_Previews: PreviewProvider {
     static var previews: some View {
-        DetailView()
+        DetailView(detailmakanan: .constant(.example))
     }
 }

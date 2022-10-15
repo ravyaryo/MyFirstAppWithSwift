@@ -15,7 +15,7 @@ struct ListView: View {
                 ForEach(items) { item in
                     ListItem(item: item)
                         .sheet(isPresented: $show, content: {
-                            DetailView()
+                            DetailView(detailmakanan: .constant(.example))
                         })
                         .onTapGesture {
                             show.toggle()

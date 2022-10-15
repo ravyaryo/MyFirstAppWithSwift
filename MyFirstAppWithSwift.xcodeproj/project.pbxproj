@@ -92,9 +92,9 @@
 			children = (
 				1DBE686228F71DE3008394B7 /* MyFirstAppWithSwiftApp.swift */,
 				1DAE9DCA28F9480300662364 /* Data.swift */,
+				1DAE9DC828F9479D00662364 /* Views */,
 				1DAE9DC928F947C500662364 /* Components */,
 				1DAE9DC728F9477C00662364 /* Navigation */,
-				1DAE9DC828F9479D00662364 /* Views */,
 				1DBE686628F71DE5008394B7 /* Assets.xcassets */,
 				1DBE686828F71DE5008394B7 /* Preview Content */,
 			);

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct CardView: View {
-    var item: Item = items[0]
+    var item: Item
     var body: some View {
         VStack(alignment: .leading, spacing: 8.0) {
             Image(item.image)
@@ -35,6 +35,6 @@ struct CardView: View {
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        CardView()
+        CardView(item: Item.example)
     }
 }

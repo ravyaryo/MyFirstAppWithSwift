@@ -9,15 +9,15 @@ import SwiftUI
 
 struct ContentView: View {
     init() {
-            UITabBar.appearance().backgroundColor = UIColor.white
-        }
+        UITabBar.appearance().backgroundColor = UIColor.white
+    }
     var body: some View {
         TabView {
             HomeView()
                 .tabItem{
-                Image(systemName: "house.fill")
-                Text("Home")
-            }
+                    Image(systemName: "house.fill")
+                    Text("Home")
+                }
             ListView()
                 .tabItem{
                     Image(systemName: "studentdesk")
