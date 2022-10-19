@@ -12,19 +12,21 @@ struct ContentView: View {
         UITabBar.appearance().backgroundColor = UIColor.white
     }
     var body: some View {
-        TabView {
-            HomeView()
-                .tabItem{
-                    Image(systemName: "house.fill")
-                    Text("Home")
-                }
-            ListView()
-                .tabItem{
-                    Image(systemName: "studentdesk")
-                    Text("Courses")
-                }
+        NavigationView{
+            TabView {
+                HomeView()
+                    .tabItem{
+                        Image(systemName: "house.fill")
+                        Text("Home")
+                    }
+                ListView()
+                    .tabItem{
+                        Image(systemName: "studentdesk")
+                        Text("Courses")
+                    }
+            }
+            .accentColor(.green)
         }
-        .accentColor(.green)
     }
 }
 

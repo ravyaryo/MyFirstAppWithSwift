@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State var searchfield: String = ""
     var body: some View {
         NavigationView {
             VStack(alignment: .leading) {
@@ -21,7 +22,7 @@ struct HomeView: View {
                             .padding([.top, .leading])
                         ScrollView(.horizontal,showsIndicators: false) {
                            CardView()
-                        }
+                        }.shadow(radius: 10)
                         Text("Recomendation")
                             .font(.title)
                             .fontWeight(.bold)
@@ -67,7 +68,7 @@ struct HomeView: View {
                     .frame(width: 24, height: 24.0)
                 Divider()
                     .frame(width: 0.0, height: 30.0)
-                TextField("Search", text: .constant(""))
+                TextField("Search", text: $searchfield)
             }
             .padding(/*@START_MENU_TOKEN@*/[.leading, .bottom, .trailing]/*@END_MENU_TOKEN@*/)
             .background{

@@ -23,10 +23,13 @@ struct CardView: View {
                         Text(card.title)
                             .font(.title)
                             .fontWeight(.bold)
+                            .multilineTextAlignment(.leading)
                         Text(card.text)
+                            .multilineTextAlignment(.leading)
                             .lineLimit(2)
                             .opacity(0.7)
                         Text("20 Section - 3 Hours")
+                            .multilineTextAlignment(.leading)
                             .opacity(0.7)
                     }
                     .foregroundColor(Color.white)

@@ -13,7 +13,6 @@ struct Card: Identifiable{
     var text : String
     var image : String
     
-//    static let example = Item(title: "Resep Telor Balado", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", image: "telor balado")
 }
 struct CardList {
     static let items = [
